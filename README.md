@@ -119,6 +119,16 @@ Avec l'environnement local existant du projet :
 .\.env\Scripts\python.exe -m pytest
 ```
 
+## Documentation
+
+La documentation complete du projet est servie par le backend :
+
+```text
+http://127.0.0.1:8000/documentation
+```
+
+Une version Markdown reste disponible dans le dossier [`docs/`](docs/index.md).
+
 ## Etat actuel
 
 Le projet contient actuellement :
