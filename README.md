@@ -160,4 +160,4 @@ Le projet contient actuellement :
 
 ## Auteur
 
-EGest est developpe comme une base d'application de gestion professionnelle, avec une attention particuliere portee a la clarte du code, a la maintenabilite et a l'evolution progressive du produit.
+EGest est developpe comme une base d'application de gestion des etablissements scolaires professionnelle, avec une attention particuliere portee a la clarte du code, a la maintenabilite et a l'evolution progressive du produit.
