@@ -32,7 +32,7 @@ async def create_student(student_data: StudentCreate, db: AsyncSession = Depends
     return StudentRead.model_validate(new_student)
 
 
-@route.put("/students/info/{student_id}", response_model=StudentRead, status_code=status.HTTP_200_OK)
+@route.put("/students/info/modify/{student_id}", response_model=StudentRead, status_code=status.HTTP_200_OK)
 async def update_student(student_id: int, student_data: StudentUpdate, db: AsyncSession = Depends(Session.get_db)):
     try:
         updated_student = await service_student.update_student(db, student_id, student_data)
@@ -43,7 +43,7 @@ async def update_student(student_id: int, student_data: StudentUpdate, db: Async
     return StudentRead.model_validate(updated_student)
 
 
-@route.delete("/students/info/{student_id}", status_code=status.HTTP_204_NO_CONTENT)
+@route.delete("/students/info/delete/{student_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_student(student_id: int, db: AsyncSession = Depends(Session.get_db)):
     deleted_student = await service_student.delete_student(db, student_id)
     if deleted_student is None:
